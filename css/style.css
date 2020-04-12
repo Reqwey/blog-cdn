@@ -343,6 +343,22 @@ td,
 th {
   padding: 0;
 }
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(47,65,84,0.322);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #2f4154;
+  background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%, transparent);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(47,65,84,0.722);
+}
 .highlight {
   position: relative;
   width: 100%;
@@ -712,175 +728,6 @@ fancybox a {
 }
 fancybox a >img {
   margin: 0;
-}
-.l_main #comments {
-  position: relative;
-}
-.l_main #comments #valine_container >i {
-  display: block;
-  margin: 16px auto;
-}
-.l_main #comments #valine_container img {
-  display: inline;
-}
-.l_main #comments #valine_container .vwrap {
-  border-radius: 12px;
-  border-style: solid;
-  border: 1px solid rgba(68,68,68,0.3);
-  transition: all 0.28s ease;
-  -moz-transition: all 0.28s ease;
-  -webkit-transition: all 0.28s ease;
-  -o-transition: all 0.28s ease;
-}
-.l_main #comments #valine_container .vwrap:hover {
-  border: 1px solid #2196f3;
-}
-.l_main #comments #valine_container .vwrap .vheader .vinput {
-  border-radius: 0;
-  border-bottom: 1px solid rgba(68,68,68,0.3);
-}
-.l_main #comments #valine_container .vwrap .vheader .vinput:hover {
-  border-bottom: 1px solid #2196f3;
-}
-.l_main #comments #valine_container .vwrap .vheader .vinput:focus {
-  border-bottom: 1px solid #2196f3;
-}
-.l_main #comments #valine_container .vwrap .vemojis,
-.l_main #comments #valine_container .vwrap .vpreview {
-  justify-content: space-between;
-  background: #f6f6f6;
-  border-radius: 4px;
-}
-.l_main #comments #valine_container .vwrap .vemojis i,
-.l_main #comments #valine_container .vwrap .vpreview i {
-  width: auto;
-  height: 36px;
-  padding: 0;
-  margin: 8px 8px 0 8px;
-  line-height: 2;
-}
-.l_main #comments #valine_container .vwrap .vemojis i #emoji,
-.l_main #comments #valine_container .vwrap .vpreview i #emoji,
-.l_main #comments #valine_container .vwrap .vemojis i .emoji,
-.l_main #comments #valine_container .vwrap .vpreview i .emoji {
-  height: 24px;
-  margin-top: 6px;
-  background: transparent;
-}
-.l_main #comments #valine_container .vwrap .vedit .vctrl span {
-  padding: 0;
-  margin: 10px;
-}
-.l_main #comments #valine_container .vwrap .vedit span {
-  fill: #555;
-}
-.l_main #comments #valine_container .vwrap .vedit span.actived {
-  fill: #2196f3;
-}
-.l_main #comments #valine_container button {
-  border: none;
-  padding: 9px 2rem 7px 2rem;
-  border-radius: 4px;
-  background: #f1f1f1;
-  color: #444;
-  transition: all 0.28s ease;
-  -moz-transition: all 0.28s ease;
-  -webkit-transition: all 0.28s ease;
-  -o-transition: all 0.28s ease;
-}
-.l_main #comments #valine_container button:hover {
-  color: #ff5722;
-  background: #ffeee8;
-}
-.l_main #comments #valine_container blockquote {
-  padding: 16px;
-  border-left: 2px solid #2196f3;
-  transition: all 0.28s ease;
-  -moz-transition: all 0.28s ease;
-  -webkit-transition: all 0.28s ease;
-  -o-transition: all 0.28s ease;
-}
-.l_main #comments #valine_container blockquote p {
-  text-align: left;
-  word-wrap: normal;
-}
-.l_main #comments #valine_container pre code {
-  border: none;
-}
-.l_main #comments #valine_container a {
-  color: #2196f3;
-  transition: all 0.28s ease;
-  -moz-transition: all 0.28s ease;
-  -webkit-transition: all 0.28s ease;
-  -o-transition: all 0.28s ease;
-}
-.l_main #comments #valine_container a:hover {
-  color: #ff5722;
-}
-.l_main #comments #valine_container div.info {
-  box-shadow: none;
-}
-.l_main #comments #valine_container div.info>div.power,
-.l_main #comments #valine_container div.info>div.power a {
-  font-size: 0.75rem;
-}
-.l_main #comments #valine_container .vhead span.vnick {
-  color: rgba(68,68,68,0.65);
-  cursor: default;
-}
-.l_main #comments #valine_container .vhead a.vnick {
-  color: #ff9800;
-  font-weight: bold;
-}
-.l_main #comments #valine_container .vhead a.vnick:hover {
-  color: #ff5722;
-}
-.l_main #comments #valine_container .vhead .vsys {
-  margin: 2px;
-  padding: 1px 8px;
-  background-color: rgba(68,68,68,0.1);
-}
-.l_main #comments #valine_container .vcard .vquote {
-  border-left: none;
-}
-.l_main #comments #valine_container .vcard .vh {
-  border-bottom: 1px solid rgba(68,68,68,0.1);
-}
-.l_main #comments #valine_container .vcard .vimg {
-  border: 1px solid #fff;
-  padding: 0;
-  background: #f6f6f6;
-}
-.l_main #comments #valine_container .vcard .vcontent.expand:before {
-  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(246,246,246,0.9));
-}
-.l_main #comments #valine_container .vcard .vcontent.expand:after {
-  background: rgba(246,246,246,0.9);
-  color: #444;
-}
-.l_main #comments #valine_container .vmeta .vat {
-  font-weight: bold;
-  color: #2196f3;
-  transition: all 0.28s ease;
-  -moz-transition: all 0.28s ease;
-  -webkit-transition: all 0.28s ease;
-  -o-transition: all 0.28s ease;
-}
-.l_main #comments #valine_container .vmeta .vat:hover {
-  color: #ff5722;
-  text-decoration: underline;
-}
-.l_main #comments #valine_container .vinput {
-  color: #444;
-}
-.l_main #comments #valine_container p {
-  color: #444;
-}
-.l_main #comments p #emoji,
-.l_main #comments p .emoji {
-  display: inline;
-  max-height: 28px;
-  background: transparent;
 }
 #archive-page {
   margin-bottom: 32px;
