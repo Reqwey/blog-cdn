@@ -729,6 +729,196 @@ fancybox a {
 fancybox a >img {
   margin: 0;
 }
+.l_main #comments {
+  position: relative;
+}
+.l_main #comments #valine_container >i {
+  display: block;
+  margin: 16px auto;
+}
+.l_main #comments #valine_container img {
+  display: inline;
+}
+.l_main #comments #valine_container .vwrap {
+  border-radius: 12px;
+  border-style: none;
+  border: none;
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+}
+.l_main #comments #valine_container .vwrap:hover,
+.l_main #comments #valine_container .vwrap .cancel-reply {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.l_main #comments #valine_container .vwrap .vheader .vinput {
+  border-radius: 0;
+  border-bottom: none;
+}
+.l_main #comments #valine_container .vwrap .vheader .vinput:hover {
+  border-bottom: 1px dashed #2196f3;
+}
+.l_main #comments #valine_container .vwrap .vheader .vinput:focus {
+  border-bottom: 1px solid #2196f3;
+}
+.l_main #comments #valine_container .vwrap .vemojis,
+.l_main #comments #valine_container .vwrap .vpreview {
+  background: #f6f6f6;
+  border-radius: 4px;
+  padding: 8px;
+}
+.l_main #comments #valine_container .vwrap .vemojis i,
+.l_main #comments #valine_container .vwrap .vpreview i {
+  width: auto;
+  padding: 8px;
+  border-radius: 4px;
+  transition: box-shadow 0.2s ease-out, background 0.2s ease-out;
+}
+.l_main #comments #valine_container .vwrap .vemojis i #emoji,
+.l_main #comments #valine_container .vwrap .vpreview i #emoji,
+.l_main #comments #valine_container .vwrap .vemojis i .emoji,
+.l_main #comments #valine_container .vwrap .vpreview i .emoji {
+  background: transparent;
+}
+.l_main #comments #valine_container .vwrap .vemojis i:hover,
+.l_main #comments #valine_container .vwrap .vpreview i:hover {
+  background: #fbfbfb;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1), -1px -1px 2px rgba(255,255,255,0.5), inset 8px 8px 16px rgba(0,0,0,0.05), inset -8px -8px 16px rgba(255,255,255,0.4);
+}
+.l_main #comments #valine_container .vwrap .vemojis i:active,
+.l_main #comments #valine_container .vwrap .vpreview i:active {
+  background: #f1f1f1;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.1), 0px 0px 0px rgba(255,255,255,0.8), inset 2px 2px 4px rgba(0,0,0,0.1), inset -2px -2px 4px #fff, inset -8px -8px 16px rgba(255,255,255,0.4);
+}
+.l_main #comments #valine_container .vwrap .vedit .vctrl span {
+  padding: 0;
+  margin: 10px;
+}
+.l_main #comments #valine_container .vwrap .vedit span {
+  fill: #555;
+}
+.l_main #comments #valine_container .vwrap .vedit span.actived {
+  fill: #2196f3;
+}
+.l_main #comments #valine_container .vcount {
+  font-size: 0.875rem;
+  padding: 0;
+  font-weight: inherit;
+}
+.l_main #comments #valine_container .vcount .vnum {
+  font-size: 1.375rem;
+}
+.l_main #comments #valine_container button {
+  border: none;
+  padding: 9px 2rem 7px 2rem;
+  border-radius: 4px;
+  background: #f1f1f1;
+  color: #444;
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+}
+.l_main #comments #valine_container button:hover {
+  color: #ff5722;
+  background: #ffeee8;
+}
+.l_main #comments #valine_container .vcards .vquote {
+  border-left: none;
+}
+.l_main #comments #valine_container .vcards .vh {
+  border-bottom: none;
+}
+.l_main #comments #valine_container .vcards .vimg {
+  border: 1px solid #fff;
+  padding: 0;
+  background: #f6f6f6;
+}
+.l_main #comments #valine_container .vcards .vcontent.expand:before {
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(246,246,246,0.9));
+}
+.l_main #comments #valine_container .vcards .vcontent.expand:after {
+  background: rgba(246,246,246,0.9);
+  color: #444;
+}
+.l_main #comments #valine_container .vcards .vhead span.vnick {
+  color: rgba(68,68,68,0.65);
+  cursor: default;
+}
+.l_main #comments #valine_container .vcards .vhead a.vnick {
+  color: #ff9800;
+  font-weight: bold;
+}
+.l_main #comments #valine_container .vcards .vhead a.vnick:hover {
+  color: #ff5722;
+}
+.l_main #comments #valine_container .vcards .vhead .vsys {
+  margin: 2px;
+  padding: 1px 8px;
+  background-color: #f6f6f6;
+}
+.l_main #comments #valine_container .vcards .vmeta .vat {
+  font-weight: bold;
+  color: #2196f3;
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+}
+.l_main #comments #valine_container .vcards .vmeta .vat:hover {
+  color: #ff5722;
+  text-decoration: underline;
+}
+.l_main #comments #valine_container .vcards .vcontent blockquote {
+  padding-top: $gap-row;
+  padding-bottom: $gap-row;
+  background: #e8f4fd;
+  border-left: 4px solid #2196f3;
+  border-radius: 4px;
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+}
+.l_main #comments #valine_container .vcards .vcontent code {
+  color: #555;
+  font-family: 'Cascadia', Menlo, Monaco, courier, monospace, "Lucida Console", 'Source Code Pro', "Microsoft YaHei", Helvetica, Arial, sans-serif, 'Ubuntu';
+}
+.l_main #comments #valine_container .vcards .vcontent pre {
+  background: #f6f6f6;
+}
+.l_main #comments #valine_container .vcards .vcontent pre code {
+  border: none;
+}
+.l_main #comments #valine_container .vcards .vcontent a {
+  color: #2196f3;
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+}
+.l_main #comments #valine_container .vcards .vcontent a:hover {
+  color: #ff5722;
+}
+.l_main #comments #valine_container .vcards .vcontent p {
+  margin-top: $gap-row;
+  margin-bottom: $gap-row;
+}
+.l_main #comments #valine_container .vcards .vcontent .vemoji {
+  max-height: 25px;
+}
+.l_main #comments #valine_container .vcopy,
+.l_main #comments #valine_container .vcopy a {
+  font-size: 0.75rem;
+}
+.l_main #comments #valine_container .vinput {
+  color: #444;
+}
+.l_main #comments #valine_container p {
+  color: #444;
+}
 #archive-page {
   margin-bottom: 32px;
 }
