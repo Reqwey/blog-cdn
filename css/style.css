@@ -1188,7 +1188,7 @@ fancybox a >img {
   margin-right: 4px;
 }
 .article ul>li {
-  list-style: initial;
+  list-style: none;
 }
 .article ol>li {
   list-style: decimal;
@@ -1394,13 +1394,11 @@ fancybox a >img {
   padding: 0 0.6em;
   margin: 0;
 }
-.article .widget .content ul.entry,
-.article .widget .content ul.popular-posts {
+.article .widget .content ul.entry {
   padding-left: 9px;
   margin-left: 16px;
 }
-.article .widget .content ul.entry a,
-.article .widget .content ul.popular-posts a {
+.article .widget .content ul.entry a {
   display: inline;
   border-left: none;
   padding: 0;
@@ -1409,10 +1407,26 @@ fancybox a >img {
   font-weight: normal;
 }
 .article .widget .content ul.entry a:hover,
-.article .widget .content ul.popular-posts a:hover,
 .article .widget .content ul.entry a.active,
+.article .widget .content ul.entry a:active {
+  border-left: none;
+  background: none;
+  color: #ff5722;
+}
+.article .widget .content ul.popular-posts {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.article .widget .content ul.popular-posts a {
+  display: inline;
+  border-left: none;
+  padding: 0;
+  padding-left: 4px;
+  color: #2196f3;
+  font-weight: normal;
+}
+.article .widget .content ul.popular-posts a:hover,
 .article .widget .content ul.popular-posts a.active,
-.article .widget .content ul.entry a:active,
 .article .widget .content ul.popular-posts a:active {
   border-left: none;
   background: none;
