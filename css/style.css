@@ -748,7 +748,9 @@ fancybox a >img {
   -webkit-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
 }
-.l_main #comments #valine_container .vwrap:hover,
+.l_main #comments #valine_container .vwrap:hover {
+  border: none;
+}
 .l_main #comments #valine_container .vwrap .cancel-reply {
   margin-top: 0;
   margin-bottom: 0;
@@ -825,6 +827,10 @@ fancybox a >img {
   color: #ff5722;
   background: #ffeee8;
 }
+.l_main #comments #valine_container button.vmore {
+  width: 100%;
+  padding: $gap-paragraph 2rem;
+}
 .l_main #comments #valine_container .vcards .vquote {
   border-left: none;
 }
@@ -848,7 +854,7 @@ fancybox a >img {
   cursor: default;
 }
 .l_main #comments #valine_container .vcards .vhead a.vnick {
-  color: #ff9800;
+  color: rgba(85,85,85,0.65);
   font-weight: bold;
 }
 .l_main #comments #valine_container .vcards .vhead a.vnick:hover {
