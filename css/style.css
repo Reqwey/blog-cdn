@@ -1194,7 +1194,7 @@ fancybox a >img {
   margin-right: 4px;
 }
 .article ul>li {
-  list-style: none;
+  list-style: initial;
 }
 .article ol>li {
   list-style: decimal;
@@ -1422,6 +1422,9 @@ fancybox a >img {
 .article .widget .content ul.popular-posts {
   padding-left: 0px;
   margin-left: 0px;
+}
+.article .widget .content ul.popular-posts li {
+  list-style: none;
 }
 .article .widget .content ul.popular-posts a {
   display: inline;
