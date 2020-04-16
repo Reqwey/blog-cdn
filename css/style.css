@@ -692,13 +692,18 @@ pre .coffeescript .title {
 .highlight:hover .btn-copy {
   opacity: 1;
 }
+@font-face {
+  font-family: "Font Awesome Light";
+  src: url("https://cdn.jsdelivr.net/gh/Linhk1606/fontawesome-cdn@5.13.0/webfonts/fa-light-300.ttf");
+  font-style: normal;
+}
 .article-entry div.info {
   background-color: rgba(27,205,252,0.2);
   border-left: 4px solid #1bcdfc;
   border-radius: 4px;
 }
 .article-entry div.info >:before {
-  font-family: "Font Awesome 5 Pro";
+  font-family: "Font Awesome Light";
   content: "";
   position: absolute;
   top: 50%;
@@ -721,7 +726,7 @@ pre .coffeescript .title {
   border-radius: 4px;
 }
 .article-entry div.success >:before {
-  font-family: "Font Awesome 5 Pro";
+  font-family: "Font Awesome Light";
   content: "\f00c";
   position: absolute;
   top: 50%;
@@ -744,7 +749,7 @@ pre .coffeescript .title {
   border-radius: 4px;
 }
 .article-entry div.warning >:before {
-  font-family: "Font Awesome 5 Pro";
+  font-family: "Font Awesome Light";
   content: "\f12a";
   position: absolute;
   top: 50%;
@@ -767,7 +772,7 @@ pre .coffeescript .title {
   border-radius: 4px;
 }
 .article-entry div.danger >:before {
-  font-family: "Font Awesome 5 Pro";
+  font-family: "Font Awesome Light";
   content: "";
   position: absolute;
   top: 50%;
@@ -2207,16 +2212,16 @@ footer .copyright {
   transform: translateY(0) scale(1);
 }
 .l_body .s-top.show.hl {
-  background: #fff;
-  color: #2196f3;
+  background: #666;
+  color: #e8f4fd;
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
 }
 @media screen and (min-width: 768px) {
   .l_body .s-top:hover {
     transform: scale(1.2);
     border-radius: 25%;
-    background: #fff;
-    color: #2196f3;
+    background: #666;
+    color: #e8f4fd;
     box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
   }
   .l_body .s-top:hover.hl {
