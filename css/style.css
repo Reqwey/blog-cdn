@@ -693,8 +693,8 @@ pre .coffeescript .title {
   opacity: 1;
 }
 @font-face {
-  font-family: "Font Awesome Light";
-  src: url("https://cdn.jsdelivr.net/gh/Linhk1606/fontawesome-cdn@5.13.0/webfonts/fa-light-300.ttf");
+  font-family: "Font Awesome Solid";
+  src: url("https://cdn.jsdelivr.net/gh/Linhk1606/fontawesome-cdn@5.13.0/webfonts/fa-solid-900.ttf");
   font-style: normal;
 }
 .article-entry div.info {
@@ -703,22 +703,20 @@ pre .coffeescript .title {
   border-radius: 4px;
 }
 .article-entry div.info >:before {
-  font-family: "Font Awesome Light";
+  font-family: "Font Awesome Solid";
   content: "";
   position: absolute;
   top: 50%;
-  left: -14.5px;
+  left: 2.5px;
   margin-top: -12px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   text-align: center;
-  color: #fff;
+  color: #1bcdfc;
   background-size: 16px 16px;
   background-position: 4px 4px;
   background-repeat: no-repeat;
-  background-color: #1bcdfc;
-  background-image: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyMTYgMTM0NHYxMjhxMCAyNi0xOSA0NXQtNDUgMTloLTUxMnEtMjYgMC00NS0xOXQtMTktNDV2LTEyOHEwLTI2IDE5LTQ1dDQ1LTE5aDY0di0zODRoLTY0cS0yNiAwLTQ1LTE5dC0xOS00NXYtMTI4cTAtMjYgMTktNDV0NDUtMTloMzg0cTI2IDAgNDUgMTl0MTkgNDV2NTc2aDY0cTI2IDAgNDUgMTl0MTkgNDV6bS0xMjgtMTE1MnYxOTJxMCAyNi0xOSA0NXQtNDUgMTloLTI1NnEtMjYgMC00NS0xOXQtMTktNDV2LTE5MnEwLTI2IDE5LTQ1dDQ1LTE5aDI1NnEyNiAwIDQ1IDE5dDE5IDQ1eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==");
 }
 .article-entry div.success {
   background-color: rgba(61,197,80,0.2);
@@ -726,22 +724,20 @@ pre .coffeescript .title {
   border-radius: 4px;
 }
 .article-entry div.success >:before {
-  font-family: "Font Awesome Light";
+  font-family: "Font Awesome Solid";
   content: "\f00c";
   position: absolute;
   top: 50%;
-  left: -14.5px;
+  left: 2.5px;
   margin-top: -12px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   text-align: center;
-  color: #fff;
+  color: #3dc550;
   background-size: 16px 16px;
   background-position: 4px 4px;
   background-repeat: no-repeat;
-  background-color: #3dc550;
-  background-image: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNjcxIDU2NnEwIDQwLTI4IDY4bC03MjQgNzI0LTEzNiAxMzZxLTI4IDI4LTY4IDI4dC02OC0yOGwtMTM2LTEzNi0zNjItMzYycS0yOC0yOC0yOC02OHQyOC02OGwxMzYtMTM2cTI4LTI4IDY4LTI4dDY4IDI4bDI5NCAyOTUgNjU2LTY1N3EyOC0yOCA2OC0yOHQ2OCAyOGwxMzYgMTM2cTI4IDI4IDI4IDY4eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==");
 }
 .article-entry div.warning {
   background-color: rgba(255,189,43,0.2);
@@ -749,22 +745,20 @@ pre .coffeescript .title {
   border-radius: 4px;
 }
 .article-entry div.warning >:before {
-  font-family: "Font Awesome Light";
+  font-family: "Font Awesome Solid";
   content: "\f12a";
   position: absolute;
   top: 50%;
-  left: -14.5px;
+  left: 2.5px;
   margin-top: -12px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   text-align: center;
-  color: #fff;
+  color: #ffbd2b;
   background-size: 16px 16px;
   background-position: 4px 4px;
   background-repeat: no-repeat;
-  background-color: #ffbd2b;
-  background-image: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMDg4IDEyNTZ2MjQwcTAgMTYtMTIgMjh0LTI4IDEyaC0yNDBxLTE2IDAtMjgtMTJ0LTEyLTI4di0yNDBxMC0xNiAxMi0yOHQyOC0xMmgyNDBxMTYgMCAyOCAxMnQxMiAyOHptMzE2LTYwMHEwIDU0LTE1LjUgMTAxdC0zNSA3Ni41LTU1IDU5LjUtNTcuNSA0My41LTYxIDM1LjVxLTQxIDIzLTY4LjUgNjV0LTI3LjUgNjdxMCAxNy0xMiAzMi41dC0yOCAxNS41aC0yNDBxLTE1IDAtMjUuNS0xOC41dC0xMC41LTM3LjV2LTQ1cTAtODMgNjUtMTU2LjV0MTQzLTEwOC41cTU5LTI3IDg0LTU2dDI1LTc2cTAtNDItNDYuNS03NHQtMTA3LjUtMzJxLTY1IDAtMTA4IDI5LTM1IDI1LTEwNyAxMTUtMTMgMTYtMzEgMTYtMTIgMC0yNS04bC0xNjQtMTI1cS0xMy0xMC0xNS41LTI1dDUuNS0yOHExNjAtMjY2IDQ2NC0yNjYgODAgMCAxNjEgMzF0MTQ2IDgzIDEwNiAxMjcuNSA0MSAxNTguNXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=");
 }
 .article-entry div.danger {
   background-color: rgba(254,95,88,0.2);
@@ -772,22 +766,20 @@ pre .coffeescript .title {
   border-radius: 4px;
 }
 .article-entry div.danger >:before {
-  font-family: "Font Awesome Light";
+  font-family: "Font Awesome Solid";
   content: "";
   position: absolute;
   top: 50%;
-  left: -14.5px;
+  left: 2.5px;
   margin-top: -12px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   text-align: center;
-  color: #fff;
+  color: #fe5f58;
   background-size: 16px 16px;
   background-position: 4px 4px;
   background-repeat: no-repeat;
-  background-color: #fe5f58;
-  background-image: url("data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMDg4IDEyNDh2MjI0cTAgMjYtMTkgNDV0LTQ1IDE5aC0yNTZxLTI2IDAtNDUtMTl0LTE5LTQ1di0yMjRxMC0yNiAxOS00NXQ0NS0xOWgyNTZxMjYgMCA0NSAxOXQxOSA0NXptMzAtMTA1NmwtMjggNzY4cS0xIDI2LTIwLjUgNDV0LTQ1LjUgMTloLTI1NnEtMjYgMC00NS41LTE5dC0yMC41LTQ1bC0yOC03NjhxLTEtMjYgMTcuNS00NXQ0NC41LTE5aDMyMHEyNiAwIDQ0LjUgMTl0MTcuNSA0NXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=");
 }
 fancybox {
   display: flex;
@@ -957,8 +949,8 @@ fancybox a >img {
 .l_main #comments #valine_container .vcards .vcontent blockquote {
   padding-top: $gap-row;
   padding-bottom: $gap-row;
-  background: #e8f4fd;
-  border-left: 4px solid #2196f3;
+  background: #f0f0f0;
+  border-left: 4px solid #696969;
   border-radius: 4px;
   transition: all 0.28s ease;
   -moz-transition: all 0.28s ease;
@@ -1300,9 +1292,25 @@ fancybox a >img {
   margin-right: 5px;
 }
 .article blockquote {
-  background: #e8f4fd;
-  border-left: 4px solid #2196f3;
+  background: #f0f0f0;
+  border-left: 4px solid #696969;
   border-radius: 4px;
+}
+.article blockquote >:before {
+  font-family: "Font Awesome Solid";
+  content: "\f054";
+  position: absolute;
+  top: 50%;
+  left: 2.5px;
+  margin-top: -12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  color: #696969;
+  background-size: 16px 16px;
+  background-position: 4px 4px;
+  background-repeat: no-repeat;
 }
 .article blockquote,
 .article div.info,
@@ -1312,7 +1320,7 @@ fancybox a >img {
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
   position: relative;
   width: 100%;
-  padding: 0.7em 1.2em;
+  padding: 0.7em 1.9em;
   transition: all 0.28s ease;
   -moz-transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
@@ -1377,7 +1385,7 @@ fancybox a >img {
 .article div.warning.pullquote.right,
 .article div.danger.pullquote.right {
   border-left: none;
-  border-right: 4px solid #2196f3;
+  border-right: 4px solid #696969;
 }
 .article blockquote.pullquote.right p,
 .article div.info.pullquote.right p,
