@@ -2236,13 +2236,13 @@ footer .copyright {
   }
 }
 .l_main {
-  width: calc(100% - 1 * 285px);
+  width: calc(100% - 1 * 240px);
   padding-right: 16px;
   float: left;
 }
 @media screen and (max-width: 1440px) {
   .l_main {
-    width: calc(100% - 1 * 240px);
+    width: calc(100% - 1 * $sidebar-s);
   }
 }
 @media screen and (max-width: 768px) {
@@ -2253,7 +2253,7 @@ footer .copyright {
 .l_main.no_sidebar {
   width: 100%;
   padding-right: 0;
-  max-width: 795px;
+  max-width: 840px;
   margin: auto;
 }
 .l_main.no_sidebar ~.l_side {
@@ -2725,7 +2725,7 @@ div.hoverbox:hover >div.target {
   color: #444;
 }
 .l_header.no_sidebar .wrapper {
-  max-width: 795px;
+  max-width: 840px;
 }
 @media screen and (max-width: 500px) {
   .l_header .wrapper.sub .logo {
@@ -2953,30 +2953,50 @@ div.hoverbox:hover >div.target {
   display: flex;
 }
 .l_header .m_search {
-  position: relative;
   display: flex;
-  width: 285px;
   height: 64px;
+  width: 240px;
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1024px) {
   .l_header .m_search {
+    width: 44px;
+    min-width: 44px;
+  }
+  .l_header .m_search input::placeholder {
+    opacity: 0;
+  }
+  .l_header .m_search:hover {
     width: 240px;
+  }
+  .l_header .m_search:hover input::placeholder {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 500px) {
+  .l_header .m_search:hover .input {
+    width: 100%;
+  }
+  .l_header .m_search:hover .input::placeholder {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .l_header .m_search {
+    min-width: 0;
+  }
+  .l_header .m_search input::placeholder {
+    opacity: 1;
   }
 }
 .l_header .m_search .form {
   position: relative;
   display: flex;
   width: 100%;
-  margin: auto;
-  justify-content: flex-start;
   align-items: center;
-}
-.l_header .m_search .icon,
-.l_header .m_search .input {
-  transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
 }
 .l_header .m_search .icon {
   position: absolute;
@@ -2993,18 +3013,29 @@ div.hoverbox:hover >div.target {
   display: block;
   padding-top: 8px;
   padding-bottom: 8px;
+  line-height: 1.3;
   width: 100%;
   color: #444;
-  background: rgba(242,242,242,0.75);
+  background: #fafafa;
   box-shadow: none;
   box-sizing: border-box;
   padding-left: 36px;
   font-size: 0.875rem;
   border-radius: 8px;
-  border: 1px dashed transparent;
+  border: none;
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+}
+@media screen and (min-width: 500px) {
+  .l_header .m_search .input:focus {
+    box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+  }
 }
 @media screen and (max-width: 500px) {
   .l_header .m_search .input {
+    background: #f6f6f6;
     padding-left: 8px;
     border: none;
   }
@@ -3012,12 +3043,6 @@ div.hoverbox:hover >div.target {
   .l_header .m_search .input:focus {
     border: none;
   }
-}
-.l_header .m_search .input:hover ~.icon {
-  color: rgba(33,150,243,0.8);
-}
-.l_header .m_search .input:focus ~.icon {
-  color: #2196f3;
 }
 @media (max-width: 500px) {
   .l_header {
@@ -3478,7 +3503,7 @@ ul.menu-phone >li>a.active {
   z-index: 1;
 }
 .l_side {
-  width: 285px;
+  width: 240px;
   float: right;
   position: relative;
   display: flex;
@@ -3486,7 +3511,7 @@ ul.menu-phone >li>a.active {
 }
 @media screen and (max-width: 1440px) {
   .l_side {
-    width: 240px;
+    width: $sidebar-s;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3623,15 +3648,15 @@ ul.menu-phone >li>a.active {
   margin: 0;
   display: flex;
   justify-content: center;
-  width: 285px;
-  height: 285px;
+  width: 240px;
+  height: 240px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 @media screen and (max-width: 1440px) {
   .widget.blogger .content img {
-    width: 240px;
-    height: 240px;
+    width: $sidebar-s;
+    height: $sidebar-s;
   }
 }
 @media screen and (max-width: 768px) {
