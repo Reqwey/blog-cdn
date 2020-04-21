@@ -2661,6 +2661,9 @@ div.hoverbox:hover >div.target {
 .white-box {
   background: #fff;
 }
+.reveal {
+  visibility: hidden;
+}
 #loading-bar-wrapper {
   position: fixed;
   top: 0;
