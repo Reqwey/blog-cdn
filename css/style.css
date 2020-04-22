@@ -1568,10 +1568,11 @@ fancybox a >img {
 .article .article-entry> h6 {
   margin-bottom: 1rem;
 }
-article .readmore>a {
-  font-size: 0.875rem;
+article .readmore {
+  margin-top: 1rem;
 }
-article .readmore>a:hover {
+article .readmore >a:hover {
+  font-size: 0.875rem;
   text-decoration: none;
 }
 input[type=checkbox] + p {
@@ -2857,6 +2858,77 @@ div.hoverbox:hover >div.target {
   display: block;
   padding: 0 8px;
   color: rgba(68,68,68,0.85);
+}
+.l_header .menu ul>li>a i.music {
+  animation: rotate-effect 1.5s linear infinite;
+}
+@-moz-keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(27 0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(27 0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(27 0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(27 0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .l_header .menu ul>li>a.current {
   border-bottom: 2px solid rgba(33,150,243,0.8);
