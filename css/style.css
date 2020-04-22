@@ -809,30 +809,14 @@ fancybox a >img {
   display: inline;
 }
 .l_main #comments #valine_container .vwrap {
-  border-radius: 12px;
-  border-style: none;
-  border: none;
   transition: all 0.28s ease;
   -moz-transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
 }
-.l_main #comments #valine_container .vwrap:hover {
-  border: none;
-}
 .l_main #comments #valine_container .vwrap .cancel-reply {
   margin-top: 0;
   margin-bottom: 0;
-}
-.l_main #comments #valine_container .vwrap .vheader .vinput {
-  border-radius: 0;
-  border-bottom: none;
-}
-.l_main #comments #valine_container .vwrap .vheader .vinput:hover {
-  border-bottom: 1px dashed #2196f3;
-}
-.l_main #comments #valine_container .vwrap .vheader .vinput:focus {
-  border-bottom: 1px solid #2196f3;
 }
 .l_main #comments #valine_container .vwrap .vemojis,
 .l_main #comments #valine_container .vwrap .vpreview {
@@ -846,12 +830,6 @@ fancybox a >img {
   padding: 8px;
   border-radius: 4px;
   transition: box-shadow 0.2s ease-out, background 0.2s ease-out;
-}
-.l_main #comments #valine_container .vwrap .vemojis i #emoji,
-.l_main #comments #valine_container .vwrap .vpreview i #emoji,
-.l_main #comments #valine_container .vwrap .vemojis i .emoji,
-.l_main #comments #valine_container .vwrap .vpreview i .emoji {
-  background: transparent;
 }
 .l_main #comments #valine_container .vwrap .vemojis i:hover,
 .l_main #comments #valine_container .vwrap .vpreview i:hover {
@@ -874,19 +852,23 @@ fancybox a >img {
   fill: #2196f3;
 }
 .l_main #comments #valine_container .vcount {
+  color: #555;
   font-size: 0.875rem;
   padding: 0;
   font-weight: inherit;
 }
 .l_main #comments #valine_container .vcount .vnum {
+  color: #555;
   font-size: 1.375rem;
 }
 .l_main #comments #valine_container button {
   border: none;
-  padding: 9px 2rem 7px 2rem;
+  padding: 4px 2rem;
   border-radius: 4px;
   background: #f1f1f1;
   color: #444;
+  line-height: 2;
+  font-size: 14px;
   transition: all 0.28s ease;
   -moz-transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
@@ -898,13 +880,10 @@ fancybox a >img {
 }
 .l_main #comments #valine_container button.vmore {
   width: 100%;
-  padding: $gap-paragraph 2rem;
+  padding: 8px 2rem;
 }
 .l_main #comments #valine_container .vcards .vquote {
   border-left: none;
-}
-.l_main #comments #valine_container .vcards .vh {
-  border-bottom: none;
 }
 .l_main #comments #valine_container .vcards .vimg {
   border: 1px solid #fff;
@@ -923,16 +902,11 @@ fancybox a >img {
   cursor: default;
 }
 .l_main #comments #valine_container .vcards .vhead a.vnick {
-  color: rgba(85,85,85,0.65);
+  color: #666;
   font-weight: bold;
 }
 .l_main #comments #valine_container .vcards .vhead a.vnick:hover {
   color: #ff5722;
-}
-.l_main #comments #valine_container .vcards .vhead .vsys {
-  margin: 2px;
-  padding: 1px 8px;
-  background-color: #f6f6f6;
 }
 .l_main #comments #valine_container .vcards .vmeta .vat {
   font-weight: bold;
@@ -944,7 +918,6 @@ fancybox a >img {
 }
 .l_main #comments #valine_container .vcards .vmeta .vat:hover {
   color: #ff5722;
-  text-decoration: underline;
 }
 .l_main #comments #valine_container .vcards .vcontent blockquote {
   padding-top: $gap-row;
@@ -969,6 +942,7 @@ fancybox a >img {
 }
 .l_main #comments #valine_container .vcards .vcontent a {
   color: #2196f3;
+  line-height: inherit;
   transition: all 0.28s ease;
   -moz-transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
@@ -976,17 +950,24 @@ fancybox a >img {
 }
 .l_main #comments #valine_container .vcards .vcontent a:hover {
   color: #ff5722;
+  text-decoration: underline;
 }
 .l_main #comments #valine_container .vcards .vcontent p {
+  color: #555;
   margin-top: $gap-row;
   margin-bottom: $gap-row;
-}
-.l_main #comments #valine_container .vcards .vcontent .vemoji {
-  max-height: 25px;
+  line-height: inherit;
 }
 .l_main #comments #valine_container .vcopy,
 .l_main #comments #valine_container .vcopy a {
   font-size: 0.75rem;
+}
+.l_main #comments #valine_container .vcopy a {
+  color: #555;
+}
+.l_main #comments #valine_container .vcopy a:hover {
+  text-decoration: underline;
+  color: #ff5722;
 }
 .l_main #comments #valine_container .vinput {
   color: #444;
