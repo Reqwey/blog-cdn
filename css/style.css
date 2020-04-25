@@ -377,8 +377,21 @@ th {
 .highlight figcaption {
   position: sticky;
   left: 0;
-  padding: 4px 8px 4px 8px;
+  padding: 4px 8px 4px 78px;
   background-color: #eaeaea;
+}
+.highlight figcaption :after {
+  content: " ";
+  position: absolute;
+  border-radius: 50%;
+  background: #fc625d;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 10px;
+  margin-top: 7px;
+  -webkit-box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
 }
 .highlight table {
   overflow: auto;
@@ -517,6 +530,25 @@ th {
 }
 .highlight.plain .code:before {
   content: "text";
+}
+.highlight::-webkit-scrollbar {
+  height: 2px;
+  width: 2px;
+}
+.highlight::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+.highlight::-webkit-scrollbar-thumb {
+  background: rgba(68,68,68,0.3);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+}
+.highlight::-webkit-scrollbar-thumb:hover {
+  background: rgba(68,68,68,0.6);
 }
 pre .line,
 pre .regexp,
