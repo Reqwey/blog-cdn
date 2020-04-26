@@ -377,7 +377,7 @@ th {
 .highlight figcaption {
   position: sticky;
   left: 0;
-  padding: 4px 8px 4px 78px;
+  padding: 4px 8px 4px 8px;
   background-color: #eaeaea;
 }
 .highlight figcaption :after {
@@ -1299,9 +1299,11 @@ fancybox a >img {
 .article .subtitle h6 {
   color: rgba(68,68,68,0.9);
 }
+.article figure figcaption {
+  text-align: center;
+}
 .article figure figcaption span {
   display: inline-block;
-  margin-right: 5px;
 }
 .article blockquote {
   background: #f0f0f0;
